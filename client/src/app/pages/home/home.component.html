@@ -5,8 +5,10 @@
   <mat-drawer mode="side" opened class="p-6">
     <app-filters (showCategory)="onShowCategory($event)"> </app-filters>
   </mat-drawer>
+
   <mat-drawer-content class="p-6">
     <app-products-header (columnsCountChange)="onColumnsCountChange($event)"></app-products-header>
+    
     <mat-grid-list
       gutterSize="16"
       [cols]="cols"

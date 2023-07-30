@@ -18,6 +18,5 @@ export class FiltersComponent implements OnInit {
 
   onShowCategory(category: string): void {
     this.showCategory.emit(category);
-    console.log(category);
   }
 }
